@@ -14,18 +14,20 @@
 
 // console.log(date);
 
+const date =new Date('12/01/2021').getTime() - Date.now() ;
+
 export const getDays = time => Math.floor(time / 1000 / 60 / 60 / 24);
 
-// console.log(getDays(date));
+console.log(getDays(date));
 
 export const getHours = time => Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60 ));
 
-// console.log(getHours(date));
+console.log(getHours(date));
 
 export const getMins = time =>  Math.floor((time % (1000 * 60 * 60)) / (1000 * 60 ));
 
-// console.log(getMins(date));
+console.log(getMins(date));
 
 export const getSeconds = time =>  Math.floor((time % (1000 * 60)) / 1000); 
 
-// console.log(getSeconds(date));
+console.log(getSeconds(date));
